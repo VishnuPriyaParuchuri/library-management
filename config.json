@@ -1,0 +1,26 @@
+{
+    "development": {
+        "APP_NAME": "library management",
+        "SERVER_URL": "http://localhost",
+        "SERVER_PORT": 4500,
+        "DB_TYPE": "sql",
+        "SQL": {
+            "CLIENT": "oracledb",
+            "HOST": "localhost",
+            "USER": "MYDB1",
+            "PASWD": "dbroot",
+            "DATABASE": "ORCL",
+            "OWNER": null,
+            "CONNECT_STRING" : "(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST =localhost)(PORT = 1521) ) (CONNECT_DATA = (SERVER = DEDICATED)(SID = XE) ) )",
+            "POOL": {
+                "MIN": 0,
+                "MAX": 3
+            },
+            "CONNECTION_TIMEOUT": 200000
+        },
+        "JWT": {
+            "SECRET_KEY": null,
+            "EXPIRESIN": "24h"
+        }
+    }
+}
