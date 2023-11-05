@@ -21,6 +21,8 @@
         "JWT": {
             "SECRET_KEY": null,
             "EXPIRESIN": "24h"
-        }
+        },
+        "ENCRYPT_SECRET_KEY": "libraryManagement"
+
     }
 }

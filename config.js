@@ -29,4 +29,22 @@ module.exports = {
         },
         connectionTimeout: process.env.SQL_DB_CONNECTION_TIMEOUT || environmentConfig.SQL.CONNECTION_TIMEOUT
     },
+    dbServer: "COMMON",
+    upload_files:  __dirname + '/uploads/',
+    
+    jwt: {
+        secret_key: process.env.JWT_SECRET_KEY || (environmentConfig.JWT ? environmentConfig.JWT.SECRET_KEY : null),
+        expiresin: process.env.JWT_EXPIRESIN || (environmentConfig.JWT ? environmentConfig.JWT.EXPIRESIN : null),
+    },
+
+    encrypt_secret_key: environmentConfig.ENCRYPT_SECRET_KEY || "libraryManagement",
+
+    smtp: {
+        host: "smtp.gmail.com",
+        port: 465,
+        secure: true,
+        email: 'priyaparuchuri111@gmail.com',
+        paswd: 'ibhestwxpshddsoh',
+        sender: 'Library management'
+    },
 }

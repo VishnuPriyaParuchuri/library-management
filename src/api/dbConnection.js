@@ -15,7 +15,6 @@ const getConnection = () =>
             user: user,
             password: password
         },
-        debug:console.log
     });
 
     return knex;
